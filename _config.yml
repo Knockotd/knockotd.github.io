@@ -1,65 +1,25 @@
+# Site settings ...
+uri: domain.com
 url: https://knockotd.github.io
-baseurl: ""
+name: Jeung
+title: 마음이 있는 곳에 보물이 있다.
+email: anjeundeun@gmail.com
+author: Jeung
+keywords: "Swift, Portflio, 기술블로그, 개발, developer"
+description: "개발과 기술과 시행착오"
+social_username: Jeung
 
-# Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
-
-# Team names, titles and social links
-people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
-# Build settings
+# Build settings ...
+sass:
+  style: compressed
 markdown: kramdown
-permalink: pretty
+paginate: 5
+permalink: /post/:title
+paginate_path: "/page/:num/"
+exclude:
+  - README.md
+
+# Plugins ...
+plugins:
+  - jekyll-paginate
+  - jemoji
