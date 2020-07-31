@@ -1,0 +1,38 @@
+# ----------- CONFIGURABLE START -----------
+title:            "좌충우돌 개발 Story"
+description:      "초보 개발자가 개발하고 시행착오도 겪고 공유도 하는 개발, 기술 블로그입니다."
+url:              https://knockotd.github.io #JE
+signoff:          "JE" # Your name
+facebook_appid:   #JE
+google_analytics: 
+share:            true 
+# 分页
+paginate: 15
+paginate_path: "liberxuepage:num"
+gems: [jekyll-paginate]
+links:
+  - name:         首页
+    url:          /
+    external:     false
+  - name:         书籍
+    url:          /book
+    external:     false
+  - name:         旅游
+    url:          /road
+    external:     false
+  - name:         归档
+    url:          /archives
+    external:     false
+  - name:         标签
+    url:          /tags
+    external:     false
+  - name:         关于
+    url:          /about
+    external:     false
+# ------------ CONFIGURABLE END ------------
+
+#permalink:        /:categories/:title.html
+permalink: /:year/:month/:day/:title.html
+defaults:
+  - values:
+      layout: "default"
